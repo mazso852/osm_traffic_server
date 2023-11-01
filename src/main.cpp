@@ -8,6 +8,7 @@ using namespace RoutingKit;
 using namespace std;
 
 int main(){
+	cout << "Hello" << endl;
 	// Load a car routing graph from OpenStreetMap-based data
 	auto graph = simple_load_osm_car_routing_graph_from_pbf("Turkiye.pbf");
 	auto tail = invert_inverse_vector(graph.first_out);
